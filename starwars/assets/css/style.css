@@ -1,0 +1,217 @@
+*{
+	font-family: monospace;
+	margin: 0px;
+	padding: 0px;
+
+}
+
+.col, .col-1, .col-10 {
+	padding:0px;
+
+}
+
+
+.Layout {
+    height: 120vh;
+    width: 100%;
+    background-color: antiquewhite;
+    background-image: url("http://localhost/starwars/assets/img/background.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  background-position: center; 
+  overflow: auto;
+   
+}
+
+.button {
+    position: relative;
+    justify-content: center;
+    display: flex;
+    padding-top: 20px;
+}
+
+button#buttons {
+    padding: 10px 40px;
+    margin: 10px;
+}
+
+div.names {
+    display: flex;
+    flex-wrap: wrap;
+    align-self: flex-start;
+    padding: 10px 0;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+.people-img {
+    margin-bottom: 10px;
+    display: inline-flex;
+    flex-basis: 33.3333%;
+}
+
+.character:hover{
+	background-color: #A2F6B4;
+}
+
+img {
+    height: 150px;
+    width: 150px;
+  
+}
+.people-img {
+    display: inline-flex;
+  
+}
+.character {
+    width: 150px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.btn.disabled, .btn:disabled {
+    opacity: 1;
+}
+div#people {
+    color: #d2d9d9;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+
+}
+.active_page{
+	background:#337ab7;
+	color:white !important;
+}
+.boxLoading{
+	color: white;
+	display: flex;
+}
+.boxLoading>img{
+	height: 100px;
+	width: 100px;
+}
+
+h2{
+	line-height: 2;
+    font-size: 40px;
+    color: black;
+    -webkit-text-fill-color: black;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #beb347;
+}
+
+a.previous_link ,a.next_link{
+   font-weight: bolder;
+    color: #c4c0ba;
+    font-size: 90px;
+}
+
+
+div#page_navigation 
+ {
+    margin-top: 120px;
+    float: right;
+   
+}
+div#page_navigation1{
+	margin-top: 120px;
+    float: left;
+}
+div#page-no {
+    color: #d2d9d9;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+
+@media (max-width: 575px) { 
+
+
+    
+	 	a.previous_link ,a.next_link{
+
+   
+    font-size: 50px;
+}
+
+.people-img {
+       margin: 5px;
+    
+}
+img {
+    height: 80px;
+    width: 80px;
+}
+.character {
+       width: 110px;
+    font-size: 14px;
+    font-weight: 600;
+}
+}
+
+@media (min-width: 576px) { 
+	
+
+	a.previous_link ,a.next_link{
+   
+    font-size: 50px;
+}
+
+.people-img {
+    margin: 5px;
+    /* display: inline-flex; */
+    flex-basis: 30%;
+}
+img {
+    height: 70px;
+    width: 70px;
+}
+.character {
+        width: 120px;
+    font-weight: 600;
+    font-size: 13px;
+}
+}
+
+@media (min-width: 768px) { 
+	
+	a.previous_link ,a.next_link{
+   
+    font-size: 60px;
+}
+	
+	.people-img {		
+	    margin: 6px 6px;
+    
+   display: inline-flex;
+    flex-basis: 30%;
+    
+	}
+	img {
+	    height: 100px;
+    width: 90px;
+	}
+	.character {
+	       width: 115px;
+    font-size: 16px;
+	}
+ }
+
+@media (min-width: 992px) { 
+	
+	.people-img {		
+	    margin-bottom: 10px;
+	    display: inline-flex;
+	    flex-basis: 30%;
+	}
+	img {
+	    height: 100px;
+	    width: 100px;
+	}
+	.character {
+	    width: 195px;
+	}
+ }
+
