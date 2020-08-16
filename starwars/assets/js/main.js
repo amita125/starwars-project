@@ -52,6 +52,7 @@ function myFunc(id){
         alert(" You can only select 3 character.");
     }
     console.log(people.length);
+    console.log(selected);
 }
 
 // this is reset function
@@ -87,7 +88,7 @@ function pagination (){
         current_link++;
     }
     $('#page_navigation').html(prev_html).hide();
-    $('#page_navigation1').html(next_html1);
+    $('#page_navigation1').html(next_html);
     $('#page_navigation .page_link:first').addClass('active_page');
     $('#names').children().slice(0, show_per_page).css('display', 'inline-flex');     
 }
@@ -128,8 +129,21 @@ function go_to_page(page_num){
     $('#current_page').val(page_num);
 }
 
-//download function
+//download csv file of selected character
 function downloadFunc(){
+    const replacer = (key, value) => value === null ? '' : value 
+    const header = Object.keys(selected[0])
+    let csv = selected.map(row => header.map(fieldName => 
+    JSON.stringify(row[fieldName], replacer).replace(/(\r\n|\n|\r)/gm, "")).join(','))
+    csv.unshift(header.join(','))
+    csv = csv.join('\r\n')
 
-
+    // Create link and download
+    var link = document.createElement('a');
+    link.setAttribute('href', 'data:text/csv;charset=utf-8,%EF%BB%BF' + encodeURIComponent(csv));
+    link.setAttribute('download', 'character.csv');
+    link.style.visibility = 'hidden';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
 }
