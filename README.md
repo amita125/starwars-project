@@ -31,7 +31,7 @@ I expect the csv file to be downloaded in the device with the selected character
 
 When the user first loaded the app, they'll see loader with the percentage:
 
-<img src="https://github.com/amita125/starwars-project/blob/master/starwars/assets/img/loading.png" alt="loading" width="200" height="100" />
+<img src="https://github.com/amita125/starwars-project/blob/master/starwars/assets/img/loading.png" alt="loading" height="250" />
 
 Upon loading only 9 characters are displayed with the page number, selection msg and next arrow. 
 
