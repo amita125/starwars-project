@@ -31,11 +31,27 @@ I expect the csv file to be downloaded in the device with the selected character
 
 When the user first loaded the app, they'll see loader with the percentage:
 
-<img src="https://github.com/amita125/starwars-project/blob/master/starwars/assets/img/loading.png" alt="loading" height="500" width="100%" />
+<img src="https://github.com/amita125/starwars-project/blob/master/starwars/assets/img/loading.png" alt="loading" height="400" width="100%" />
 
 Upon loading only 9 characters are displayed with the page number, selection msg and next arrow. 
 
-<img src=/>
+<img src="https://github.com/amita125/starwars-project/blob/master/starwars/assets/img/page.png" alt="page" height="400" width="100%"/>
+
+Upon selection of the character the character name is displayed .
+
+<img src="https://github.com/amita125/starwars-project/blob/master/starwars/assets/img/selection.png" alt="selection" height="400" width="100%"/>
+
+User is alerted when more then 3 character is selected.
+
+<img src="https://github.com/amita125/starwars-project/blob/master/starwars/assets/img/alert.png" alt="alert" height="400" width="100%"/>
+
+Upon clicking the download button csv file is downloaded with selected name.
+
+<img src="https://github.com/amita125/starwars-project/blob/master/starwars/assets/img/download.png" alt="download" height="400" width="100%"/>
+
+
+<img src="https://github.com/amita125/starwars-project/blob/master/starwars/assets/img/csvfile.png" alt="csv" width="100%"/>
+
 
 ## <a name="app-showcase">App Showcase</a>
 
