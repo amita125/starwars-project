@@ -11,6 +11,8 @@
   
    <link rel="stylesheet" href="<?php echo base_url('assets/css/style.css');?>" 
     type="text/css" media="screen"/>
+     <link rel="stylesheet" href="<?php echo base_url('assets/css/display_img.css');?>" 
+    type="text/css" media="screen"/>
     
       
     

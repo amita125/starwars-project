@@ -18,9 +18,8 @@
     background-image: url("http://localhost/starwars/assets/img/background.svg");
     background-size: cover;
     background-repeat: no-repeat;
-  background-position: center; 
-  overflow: auto;
-   
+  	background-position: center; 
+  	overflow: auto; 
 }
 
 .button {
@@ -54,14 +53,12 @@ div.names {
 	background-color: #A2F6B4;
 }
 
-img {
+img, .card {
     height: 150px;
     width: 150px;
-  
 }
 .people-img {
     display: inline-flex;
-  
 }
 .character {
     width: 150px;
@@ -206,7 +203,7 @@ img {
 	    display: inline-flex;
 	    flex-basis: 30%;
 	}
-	img {
+	img , .card{
 	    height: 100px;
 	    width: 100px;
 	}
@@ -214,4 +211,3 @@ img {
 	    width: 195px;
 	}
  }
-
