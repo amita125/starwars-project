@@ -21,8 +21,9 @@ async function fetch_data(){
         .then(response =>response.json())
         .then(data =>{
             people.push(data);
-            text += `<div class="people-img" id="character-${urlArray.indexOf(urlArray[j])}"><img src="http://localhost/starwars/assets/img/robot.png" alt="img"/><button type="button" class="character" id="people-${urlArray.indexOf(urlArray[j])}" value="${urlArray.indexOf(urlArray[j])}" onclick="myFunc(this)">` + data.name+ `</button></div>`;
+            text += `<div class="people-img" id="character-${urlArray.indexOf(urlArray[j])}"><div class="card"></div><button type="button" class="character" id="people-${urlArray.indexOf(urlArray[j])}" value="${urlArray.indexOf(urlArray[j])}" onclick="myFunc(this)">` + data.name+ `</button></div>`;
             $('#names').html(text).children().css('display', 'none');
+            console.log(data.name);
         })
         .catch(err => console.log(err))
     }
@@ -30,6 +31,8 @@ async function fetch_data(){
     document.getElementById("character-16").remove();
     //call the pagination function
     pagination();
+    console.log(people);
+
 }
 
 //this character selection function
@@ -88,19 +91,11 @@ function pagination (){
         current_link++;
     }
     $('#page_navigation').html(prev_html).hide();
-<<<<<<< HEAD
-    $('#page_navigation1').html(next_html1);
-=======
     $('#page_navigation1').html(next_html);
->>>>>>> c07a104e0245d38f2a70d4214c38d152bc45271b
     $('#page_navigation .page_link:first').addClass('active_page');
     $('#names').children().slice(0, show_per_page).css('display', 'inline-flex');     
 }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> c07a104e0245d38f2a70d4214c38d152bc45271b
 //previous link function
 function previous(){
     new_page = parseInt($('#current_page').val()) - 1;
@@ -137,11 +132,7 @@ function go_to_page(page_num){
     $('#current_page').val(page_num);
 }
 
-<<<<<<< HEAD
-//download function
-=======
 //download csv file of selected character
->>>>>>> c07a104e0245d38f2a70d4214c38d152bc45271b
 function downloadFunc(){
     const replacer = (key, value) => value === null ? '' : value 
     const header = Object.keys(selected[0])
