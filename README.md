@@ -11,7 +11,6 @@ As you lunch the app you would see a loader that displayes the fetch loading.
 **Tech Stack:** *JavaScript, Php- Codeigniter, Bootstrap, Jquery*
 
 ## <a name="user-stories">User Stories</a>
-
 ```As a user when i visit the app, I would like to see the visual loading percentage of data then the blak screen.
 ```
 ```
