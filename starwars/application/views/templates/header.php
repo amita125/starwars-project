@@ -14,9 +14,7 @@
      <link rel="stylesheet" href="<?php echo base_url('assets/css/display_img.css');?>" 
     type="text/css" media="screen"/>
     
-      
-    
-	
+
 	<!-- Bootstrap javascript -->
      <script src="https://code.jquery.com/jquery-3.5.1.js"
         integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
