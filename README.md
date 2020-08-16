@@ -1,6 +1,6 @@
 # Star wars Projects
 
-[Description](#description) | [User Stories](#user-stories) | [Mockups](#mockups) | [Features](#features) | [Installation Instructions](#installation) | [Credits](#credits)
+[Description](#description) | [User Stories](#user-stories) | [Mockups](#mockups) |  [Installation Instructions](#installation) | [Credits](#credits)
 
 ## <a name="description">Description</a>
 
@@ -50,9 +50,6 @@ Upon clicking the download button csv file is downloaded with selected name.
 
 
 <img src="https://github.com/amita125/starwars-project/blob/master/starwars/assets/img/csvfile.png" alt="csv" width="100%"/>
-
-
-## <a name="app-showcase">App Showcase</a>
 
 
 
