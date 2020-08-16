@@ -211,3 +211,18 @@ img {
 	    width: 195px;
 	}
  }
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+}
+img.link_file {
+    height: 25px;
+    width: 25px;
+    background-color: floralwhite;
+    border-radius: 5px;
+}
